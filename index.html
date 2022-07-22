@@ -3,17 +3,23 @@
 <body>
 
 
-
-
   <label>C:</label>
-  <input type="number" id="fname"  ><br><br><br>
+  <input type="number" id="c"  ><br><br><br>
   
-  <button>convert </button><br><br>
+  <button type="button"
+onclick=" ctof()">
+convert</button>
+<br><br>
   <label >F:</label>
-  <input type="number" id="lname"  ><br><br>
-	
+  <input type="number" id="f"  ><br><br>
+<script>
+function ctof(){
+let x= document.getElementById('c').value;
+document.getElementById('f').value=(x* (9/5)+32);
 
+}
 
+</script>
 
 </body>
 </html>
